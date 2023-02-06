@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="292dp"
+        android:layout_height="249dp"
+        android:backgroundTint="#83192977"
+        android:background="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="219dp"
+        android:layout_height="35dp"
+        android:text="Password :"
+        android:textAlignment="center"
+        android:textColor="#F1EEEE"
+        android:fontFamily="@font/acme"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/txtemail2"
+        android:layout_width="219dp"
+        android:layout_height="35dp"
+        android:text="Email Address :"
+        android:textAlignment="center"
+        android:textColor="#F1EEEE"
+        android:fontFamily="@font/acme"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:background="@drawable/corner"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:textColorHint="#8C7F7F"
+        android:hint="xyz@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:text="mtufel21@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail2"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:background="@drawable/corner"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:ems="10"
+        android:paddingEnd="30dp"
+        android:textAlignment="center"
+        android:hint="*******"
+        android:textColorHint="#AE9F9F"
+        android:inputType="numberPassword"
+        android:paddingLeft="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="219dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/corner"
+        android:fontFamily="@font/acme"
+        android:text="Login"
+        android:backgroundTint="#83192977"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/acme"
+        android:text="Login"
+        android:textColor="#0D2088"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:fontFamily="serif"
+        android:text="Welcome to"
+        android:textColor="#0D2088"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="353dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/acme"
+        android:text="       Plastic  Center"
+        android:textColor="#0D2088"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">>
+
+        <ImageView
+            android:id="@+id/imgCustom"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="40dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cardradius"
+            android:backgroundTint="#0D2088"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:fontFamily="@font/acme"
+                android:id="@+id/txtProductNameCustom"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtShortDes"
+                android:layout_width="match_parent"
+                android:textColor="#938E8E"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:fontFamily="@font/acme"
+                android:id="@+id/txtProductPriceCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="10dp"
+                android:text="Price"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
