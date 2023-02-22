@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialpgLayout"
+        android:background="#3336EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order hase been Placed."
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Product Name   :"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/txtProNameDialog"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Qty"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Qty   :"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/txtQtyDialog"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDone"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#0B0B47"
+            android:background="@drawable/corner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Done" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

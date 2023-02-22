@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mykotlinapp.R;
 
@@ -32,9 +33,18 @@ public class ListAdapter extends ArrayAdapter<String> {
         TextView pName = v1.findViewById(R.id.txtProductNameCustom);
         TextView pPrice = v1.findViewById(R.id.txtProductPriceCustom);
         TextView shortDescription = v1.findViewById(R.id.txtShortDes);
-        pName.setText(name[i]);
-        img.setImageResource(imgs[i]);
-        pPrice.setText(price[i]);
+
+        try {
+           shortDescription.setText(des[i]);
+            pName.setText(name[i]);
+            img.setImageResource(imgs[i]);
+            pPrice.setText(price[i]);
+
+        }catch (Exception e){
+            Toast.makeText(activity, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+        }
         return v1;
+
+
     }
 }

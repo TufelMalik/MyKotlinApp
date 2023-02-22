@@ -29,6 +29,7 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
 
+
             <LinearLayout
                 android:layout_width="411dp"
                 android:layout_height="wrap_content"
@@ -36,42 +37,106 @@
                 android:background="@drawable/cstm_product_view"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="40dp"
-                    android:layout_height="5dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_gravity="center"
-                    android:backgroundTint="@color/white"
-                    android:background="@drawable/corner"
-                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="40dp"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/corner"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="25dp"
+                        >
 
-                <TextView
-                    android:fontFamily="@font/acme"
-                    android:id="@+id/txtProductName"
+                        <TextView
+                            android:id="@+id/txtProductName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:fontFamily="@font/acme"
+                            android:text="TextView"
+                            android:textColor="@color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:fontFamily="@font/acme"
+                            android:text="price"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:maxLines="@integer/material_motion_duration_long_2"
+                        android:text="Choose Quantity you want to Buy "
+                        />
+
+                    <TextView
+                        android:id="@+id/txtQty"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:layout_weight="1"
+                        android:text="0" />
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="30dp"
-                    android:text="TextView"
-                    android:textColor="@color/white"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
+                    android:orientation="horizontal"
 
+                    >
 
-                    />
+                    <Button
+                        android:id="@+id/btnMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/product_qty_draq"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="40dp" />
 
-                <TextView
-                    android:fontFamily="@font/acme"
-                    android:id="@+id/txtPrice"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="21dp"
-                    android:text="price"
-                    android:textColor="@color/white"
-                    android:textSize="25dp" />
+                    <Button
+                        android:id="@+id/btnPlus"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginRight="70dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/product_qty_draq"
+                        android:textSize="40dp"
+                        android:text="+" />
+                </LinearLayout>
+
+                </LinearLayout>
 
                 <TextView
                     android:fontFamily="@font/acme"
@@ -96,10 +161,24 @@
                     android:textAlignment="textStart"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
+                <Button
+                    android:id="@+id/btnBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="30dp"
+                    android:textColor="#9F1C1C"
+                    android:layout_margin="30dp"
+                    android:backgroundTint="#D382F331"
+                    android:background="@drawable/corner"
+                    android:text="Buy Now "
+                    />
 
             </LinearLayout>
 
         </LinearLayout>
+
+
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
