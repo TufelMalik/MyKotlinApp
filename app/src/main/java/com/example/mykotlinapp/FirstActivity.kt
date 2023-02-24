@@ -25,9 +25,6 @@ class FirstActivity : AppCompatActivity() {
         btn.setOnClickListener {
             dialog.dismiss()
         }
-
-        val actionBar = supportActionBar
-
         try {
             binding.txtProductName.setText(intent.getStringExtra("name"))
             binding.imgProduct.setImageResource(intent.getIntExtra("img",0))
@@ -37,8 +34,6 @@ class FirstActivity : AppCompatActivity() {
             binding.txtDescription.setText(des)
             var a = intent.getStringExtra("name")
             actionBar!!.setTitle(a)
-            actionBar.setIcon(intent.getIntExtra("img",0))
-
         }catch (e : Exception){
             Toast.makeText(this@FirstActivity,"Something went wrong !",Toast.LENGTH_SHORT).show()
 
@@ -51,20 +46,22 @@ class FirstActivity : AppCompatActivity() {
             dialog.show()
             Toast.makeText(this@FirstActivity,"Your "+proName+("")+" order with "+ qty+ " hase been placed successfully....",Toast.LENGTH_SHORT).show()
         }
-        binding.txtQty.text = "Qty  :   1"
+        binding.txtQty.text = "1"
         binding.btnPlus.setOnClickListener {
             qty +=1
-            binding.txtQty.text = "Qty  :   "+ qty.toString()
+            binding.txtQty.text =  qty.toString()
             checkQty()
         }
 
         binding.btnMinus.setOnClickListener {
             binding.txtQty.text = "0"
             qty -=1
-            binding.txtQty.text = "Qty  :   "+ qty.toString()
+            binding.txtQty.text =  qty.toString()
             checkQty()
 
         }
+
+
 
 
         }
@@ -75,6 +72,8 @@ class FirstActivity : AppCompatActivity() {
             qty=1
             binding.txtQty.setText("Qty  :   1")
         }
+
+
 
     }
 }

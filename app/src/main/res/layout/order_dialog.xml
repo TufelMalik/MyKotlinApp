@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@android:color/transparent"
+    android:background="#3336EA"
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:background="@drawable/corner"
         android:orientation="vertical"
         android:padding="15dp"
-          android:layout_width="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dialpgLayout"
-        android:background="#3336EA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -25,18 +26,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:backgroundTint="#3336EA"
             >
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Order hase been Placed."
+                android:text="Order hase been Placed.\n--------------------"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
-                android:textColor="@color/white"
+                    android:textColor="@color/white"
                 android:textSize="25dp" />
+
 
         </LinearLayout>
         <LinearLayout
@@ -47,11 +48,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-Product Name   :"
+                android:text="* Product Name   :"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:textColor="@color/white"
-                android:textSize="22dp" />
+                android:textSize="19dp" />
             <TextView
                 android:id="@+id/txtProNameDialog"
                 android:layout_marginTop="20dp"
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:text=" Qty"
                 android:textColor="@color/white"
-                android:textSize="22dp" />
+                android:textSize="17dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -69,11 +70,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-Qty   :"
+                android:text="* Qty   :"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:textColor="@color/white"
-                android:textSize="22dp" />
+                android:textSize="19dp" />
             <TextView
                 android:id="@+id/txtQtyDialog"
                 android:layout_marginTop="20dp"
@@ -81,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:text="Qty"
                 android:textColor="@color/white"
-                android:textSize="22dp" />
+                android:textSize="17dp" />
         </LinearLayout>
 
 
