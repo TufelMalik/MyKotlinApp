@@ -70,7 +70,7 @@ class FirstActivity : AppCompatActivity() {
     fun checkQty(){
         if (qty<1){
             qty=1
-            binding.txtQty.setText("Qty  :   1")
+            binding.txtQty.setText("1")
         }
 
 
