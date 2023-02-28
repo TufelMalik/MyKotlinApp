@@ -2,7 +2,6 @@ package com.example.mykotlinapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.GridView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mykotlinapp.Classes.RecyclerAdapter
 import com.example.mykotlinapp.Classes.RecyclerDataClass
@@ -163,8 +162,7 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         adapterRes = RecyclerAdapter(list)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
-       // binding.recyclerView = adapterRes
-
+        binding.recyclerView.adapter = adapterRes
 
 
 

@@ -16,6 +16,7 @@ class FirstActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFirstBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         var dialog = Dialog(this)
         dialog.setContentView(R.layout.order_dialog)
         var pn : TextView = dialog.findViewById(R.id.txtProNameDialog)
