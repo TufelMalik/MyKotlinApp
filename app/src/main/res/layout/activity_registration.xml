@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/user_icon"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="95dp" />
+
+    <ImageButton
+        android:id="@+id/selectImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus_icon"
+        android:backgroundTint="@color/white"
+        android:onClick="selectImage"
+        tools:ignore="UsingOnClickInXml"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+
+        <EditText
+            android:id="@+id/etRegName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:hint="Full Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="13dp"
+            android:drawableStart="@drawable/user_icon"
+            android:drawablePadding="13dp"
+            android:inputType="textPersonName"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:hint="Email Address"
+            android:drawableStart="@drawable/email_icon"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="13dp"
+            android:drawablePadding="13dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etRegPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="13dp"
+            android:drawableStart="@drawable/pass_icon"
+            android:drawablePadding="13dp"
+            android:inputType="textPassword"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/txtGotLogin"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="230dp"
+            android:text="Already have account ?" />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Register"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

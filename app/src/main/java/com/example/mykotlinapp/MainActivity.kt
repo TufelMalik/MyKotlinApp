@@ -3,7 +3,10 @@ package com.example.mykotlinapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import androidx.appcompat.app.ActionBar
 import com.example.mykotlinapp.Classes.ListAdapter
+import com.example.mykotlinapp.Fragments.UserProfileFragment
 import com.example.mykotlinapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -117,5 +120,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("des",des[position])
                 startActivity(intent)
         }
-    }
+
+        }
 }
+

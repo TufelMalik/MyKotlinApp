@@ -44,7 +44,20 @@
 
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnProfile"
+            android:textSize="23dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/corner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Activity" />
+        <Button
+            android:id="@+id/btnRecy"
             android:textSize="23dp"
             android:padding="10dp"
             android:layout_gravity="center"
