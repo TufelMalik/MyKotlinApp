@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    tools:menu="@menu/actionbar_menu"
     tools:layout_editor_absoluteX="-15dp"
     tools:layout_editor_absoluteY="-34dp">
     <ListView
